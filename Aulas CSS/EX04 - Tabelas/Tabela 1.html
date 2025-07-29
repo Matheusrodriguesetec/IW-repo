@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(180, 173, 173);
+        }
+        .fundo {
+            background-color: rgb(125, 133, 130);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabela {
+            background-color: #444343;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        caption {
+            color: aliceblue;
+            font-style: italic;
+        }
+        .table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border : 2px solid black;
+            padding: 12px;
+        }
+
+        thead, tfoot{
+            background-color: #1a1515;
+            color: rgb(201, 189, 189);
+        }
+    </style>
+</head>
+
+    <body>
+
+<div class="fundo">
+    <div class="tabela">
+        <table>
+
+            <caption>POPULAÇÃO DOS ESTADOS</caption>
+
+            <thead>
+
+                <tr>
+                    <th colspan="2">SUDESTE</th>
+                </tr>
+                
+                <tr>
+                    <th>Estado</th>
+                    <th>Quantidade</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>São paulo</td>
+                    <td class="num">44 milhões</td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">20 milhões</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">16 milhões</td>
+                </tr>
+
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td class="num">4 milhões</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <th>Total de Habitantes</th>
+                <td background-color="black">84 Milhões</td>
+            </tfoot>
+
+       </table>
+    </div>
+</div>
+    </body>
+</html>
