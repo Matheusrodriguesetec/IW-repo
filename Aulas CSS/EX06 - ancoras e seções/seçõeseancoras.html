@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luua_dub</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: sans-serif;
+        background: #0b1020;
+        color: #eee;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 1rem;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background: 1px solid #23315d;
+       }
+
+       nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0;
+       }
+
+       nav .logo{
+        font-weight: bold;
+        font-size: 1.2rem;
+       }
+
+       nav .menu a:hover {
+        background: #222;
+       }
+
+       section {
+        padding: 3rem 0;
+        scroll-margin-top: 4rem;
+       }
+
+       h2 {
+        margin-bottom: 1rem;
+       }
+
+       .grid {
+        display:grid;
+        gap: 1px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        background: #111833;
+        border: 1px solid #23315d;
+        border-radius: 12px;
+        padding: 1rem;
+    }
+    .price {
+        font-weight: bold;
+    }
+
+
+    .btn {
+        border: 1px solid #23315d;
+        background: #1a2340;
+        color: #eee;
+        padding: 0.5rem 0.8rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background : #222;
+    }
+    .primary {
+        background : #153a7a;
+        color: #fff;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 350px;
+        border: 0;
+    }
+
+
+    footer {
+        padding: 2rem 0;
+        text-align: center;
+        color: #bbb;
+        border-top: 1px solid #23315d;
+    }
+
+
+    back-to-top {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.6rem 0.9rem;
+        border-radius: 999px;
+        background: #111833;
+        border: 1px solid #23315d;
+        color: #eee;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+    <div id="top"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Luua_dub</div>
+                <div class="menu">
+                    <a href="#dublagens">Dublagens</a>
+                    <a href="#">Tipo de vozes</a>
+                    <a href="OqFaço">Faço e Não faço</a>
+                    <a href="mapa"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="Dublagens">
+            <h2>Dublagens</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Loops</h3>
+                    <p>(por não ter participado de projetos grandes o valor fica baixo)</p>
+                    <p>(se o projeto não for remunerado é de graça)
+                    <div class="price">R$25,00 pela dublagem inteira</div>
+                    <button class="btn primary">Ver dublagens</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tiposvoz">
+            <h2>Tipo de voz</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>tipo de voz</h3>
+                    <p>aqui estão alguns personagens que minha voz se encaixa para melhor comparação</p>
+                    <div class="price">R$25,00 pela dublagem inteira</div>
+                    <button class="btn primary">Ver personagens</button>
+                </div>
+            </div>
+        </section>
+
+        <main class="container">
+        <section id="oqfaco">
+            <h2>Faço/Não Faço</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Faço/não faço</h3>
+                    <p>por motivo obivios. tem certos tipos de dublagem que eu NÃO vou fazer</p>
+                    <p>veja aqui quais são os tipos de dublagens/projetos que eu aceitaria participar ou não</p>
+                    <div class="price">R$25,00 pela dublagem inteira</div>
+                    <button class="btn primary">Ver projetos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tiposvoz">
+            <h2>Detalhes</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Alguns detalhes a mais</h3>
+                    <p>quer saber mais de mim ou até ver minhas dublagens antigas?</p>
+                    <div class="price">R$25,00 pela dublagem inteira</div>
+                    <button class="btn primary">Ver detalhes</button>
+                </div>
+            </div>
+        </section>
+        <section id="mapa" class="map">
+            <h2>Onde estudei dublagem</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.5747515094704!2d-46.556631903210395!3d-23.691160900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce423578ed9473%3A0x4e27c645fbd9afdc!2sSenac%20S%C3%A3o%20Bernardo%20do%20Campo!5e0!3m2!1spt-BR!2sbr!4v1756845282741!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>Matheus Gomes Rodrigues</footer>
+
+    <a href="#top" class="back-to-top">^ TOPO</a>
+</body>
+</html>
